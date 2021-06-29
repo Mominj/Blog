@@ -1,0 +1,17 @@
+{
+  "name": "first-app",
+  "version": "1.0.0",
+  "description": "this is my first golang app",
+  "scripts": {
+    "build": "postcss css/app.css -o css/app.min.css",
+    "watch": "postcss css/app.css -o css/app.min.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  }
+}

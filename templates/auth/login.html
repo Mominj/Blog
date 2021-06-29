@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom icon font-->
+    <link rel="stylesheet" href="/static/css/fontastic.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <!-- Fancybox-->
+    <link rel="stylesheet" href="/static/vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/static/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/static/css/custom.css">
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/static/favicon.png">
+</head>
+
+<body class="bg-light" style="background: #fff;">
+     <header class="header">
+        <!-- Main Navbar-->
+        <nav class="navbar navbar-expand-lg">
+          <div class="search-area">
+            <div class="search-area-inner d-flex align-items-center justify-content-center">
+              <div class="close-btn"><i class="icon-close"></i></div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+                  <form action="#">
+                    <div class="form-group">
+                      <input type="search" name="search" id="search" placeholder="What are you looking for?">
+                      <button type="submit" class="submit"><i class="icon-search-1"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <!-- Navbar Brand -->
+            <div class="navbar-header d-flex align-items-center justify-content-between">
+              <!-- Navbar Brand --><a href="index.html" class="navbar-brand">Abdul Momin</a>
+              <!-- Toggle Button-->
+              <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+            </div>
+            <!-- Navbar Menu -->
+            <div id="navbarcollapse" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                </li>
+                <li class="nav-item"><a href="/blogsdetails/1" class="nav-link active ">Blog</a>
+              </ul>
+            </div>
+  
+          </div>
+        </nav>
+      </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 offset-3">
+    
+    
+                    
+                        <form action="/login" method="post">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <label for="email" style="display:block;">Email:</label>
+                                <input  class="form-control" type="email" name="Email" id="email" placeholder="example@example.com" value="{{.LoginForm.Email}}">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <label for="password" style="display:block;">Password:</label>
+                                <input class="form-control" type="password" name="Password" id="password" value="">
+                                    </div>
+                                </div>
+                    
+                             <br>
+                            <button class="btn btn-primary" type="submit">Login</button>
+                            <a class="btn btn-primary ml-5" href="/users/create">Registration</a>
+                        </form>
+                        
+    
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- JavaScript files-->
+     <script src="/static/vendor/jquery/jquery.min.js"></script>
+     <script src="/static/vendor/popper.js/umd/popper.min.js"> </script>
+     <script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+     <script src="/static/vendor/jquery.cookie/jquery.cookie.js"> </script>
+     <script src="/static/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+     <script src="/static/js/front.js"></script> 
+</body>
+
+</html>
